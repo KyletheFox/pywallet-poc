@@ -11,6 +11,7 @@ def handler(event, context):
     r = requests.get(url)
     print(context)
     print(event)
+    
   
     return {'statusCode': 200,
             'body': json.loads(r.text),
